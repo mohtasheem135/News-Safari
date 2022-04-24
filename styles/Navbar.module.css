@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Ubuntu:wght@300&display=swap');
+
+
+.navContainer{
+    background: linear-gradient(119.65deg, #FF3A44 0%, #FF8086 128.41%);
+    /* border: 0.2px solid #FF3A44; */
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 3px 6px grey;
+    position: fixed;
+    overflow: hidden;
+    width: 99%;
+    top: 0%;
+}
+
+.headText{
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    color: white;
+    padding: 0px 15px;
+    
+}
+
+.headText:hover{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 400px){
+    .headText{
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width: 350px){
+    .headText{
+        font-size: 20px;
+    }
+}

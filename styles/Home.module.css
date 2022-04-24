@@ -1,0 +1,300 @@
+
+
+/* Filter Section */
+
+.container_3{
+  /* border: 2px solid green; */
+  position: fixed;
+  top: 17%;
+  width: 97%;
+  height: 40px;
+  border-radius: 4px;
+  padding: 8px;
+  background-color: white;
+  z-index: 1;
+  /* overflow-x: auto; */
+  overflow: hidden;
+  display: flex;
+  box-shadow: 0px 2px 6px black;
+}
+
+.container_2{
+  /* border: 2px solid rgb(255, 0, 0); */
+  width: 19%;
+  height: 27pc;
+  overflow: auto;
+  position: fixed;
+  top: 29%;
+}
+
+.news_src_btn{
+  padding: 10px 0px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  background: none;
+  border: none;
+  /* border-bottom: 2px solid orangered; */
+  box-shadow: 2px 1px 5px #FF3A44;
+  border-radius: 0px 0px 4px 4px;
+}
+
+/* News Section */
+
+.container_1{
+  /* border: 2px solid black; */
+  height: 90pc;
+  width: 80%;
+  float: right;
+  margin-top: 180px;
+  z-index: -1;
+}
+
+.btn_1{
+  background: linear-gradient(119.65deg, #FF3A44 0%, #FF8086 128.41%);
+  border: none;
+  border-radius: 16px;
+  width: 120px;
+  box-shadow: 2px 1px 6px gray;
+  height: 42px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 17px;
+  margin-left: 25px;
+}
+
+.btn_1:hover{
+  box-shadow: 2px 1px 6px black;
+  cursor: pointer;
+  color: white;
+}
+
+.image_1{
+  width: 400px;
+  height: 250px;
+  margin-left: 200px;
+  border-radius: 6px;
+  border: 2px solid black;
+  box-shadow: 2px 1px 6px black;
+}
+
+.name_container{
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: space-between;
+  /* justify-content: space-evenly; */
+  align-items: center;
+  
+}
+
+.title{
+  font-family: 'Ubuntu', sans-serif;
+  margin-left: 50px;
+}
+
+.author{
+  font-family: 'Ubuntu', sans-serif;
+  margin-left: 40px;
+}
+
+.source{
+  font-family: 'Ubuntu', sans-serif;
+  margin-right: 120px;
+}
+
+.description{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 17px;
+  margin-left: 50px;
+}
+
+
+
+.news_src_btn:hover{
+  cursor: pointer;
+  background: linear-gradient(119.65deg, #FF3A44 0%, #FF8086 128.41%);
+  color: white;
+}
+
+@media only screen and (max-width: 700px) {
+  .container_3{
+    /* padding: 8px; */
+    overflow-x: auto;
+  }
+  .container_2{
+    width: 23%;
+  }
+
+  .news_src_btn{
+    font-size: 14px;
+  }
+  .title{
+    margin-left: 70px;
+  }
+
+  .image_1{
+    margin-left: 100px;
+  }
+  .author{
+    margin-left: 110px;
+  }
+  
+  .source{
+    margin-right: 60px;
+  }
+  
+  .description{
+    font-size: 16px;
+    margin-left: 60px;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+ 
+  .news_src_btn{
+    font-size: 14px;
+  }
+
+  .btn_1{
+    font-size: 15px;
+  }
+
+  .image_1{
+    margin-left: 100px;
+    width: 300px;
+  height: 200px;
+  }
+  .author{
+    margin-left: 80px;
+  }
+  
+  .source{
+    margin-right: 20px;
+  }
+  
+  .description{
+    font-size: 16px;
+    margin-left: 60px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+ 
+  .news_src_btn{
+    font-size: 14px;
+  }
+
+  .btn_1{
+    font-size: 15px;
+  }
+
+  .title{
+    font-size: 17px;
+  }
+
+  .image_1{
+    margin-left: 100px;
+    width: 250px;
+  height: 150px;
+  }
+  .author{
+    margin-left: 80px;
+    font-size: 13px;
+  }
+  
+  .source{
+    margin-right: 20px;
+    font-size: 13px;
+  }
+  
+  .description{
+    font-size: 14px;
+    margin-left: 60px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+ 
+  .news_src_btn{
+    font-size: 12px;
+  }
+
+  .btn_1{
+    font-size: 13px;
+    width: 100px;
+    height: 32px;
+  }
+
+  .title{
+    font-size: 16px;
+  }
+
+  .image_1{
+    margin-left: 80px;
+    width: 250px;
+  height: 150px;
+  }
+  .author{
+    margin-left: 50px;
+    font-size: 13px;
+  }
+  
+  .source{
+    margin-right: 20px;
+    font-size: 13px;
+  }
+  
+  .description{
+    font-size: 13px;
+    margin-left: 60px;
+  }
+}
+
+
+@media only screen and (max-width: 440px) {
+ 
+  .container_2{
+    width: 25%;
+  }
+  .image_1{
+    margin-left: 50px;
+    width: 250px;
+  height: 150px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+ 
+  .container_3{
+    top: 15%;
+  }
+  .container_2{
+    width: 28%;
+  }
+  .image_1{
+    margin-left: 70px;
+    width: 200px;
+  height: 130px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .container_3{
+    top: 12%;
+  }
+
+  .container_2{
+    width: 30%;
+  }
+  
+  .image_1{
+    margin-left: 70px;
+    width: 150px;
+  height: 100px;
+  }
+}
+
+

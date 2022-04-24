@@ -1,0 +1,223 @@
+.image_1{
+    width: 700px;
+    height: 400px;
+    margin-left: 300px;
+    border: 2px solid black;
+    box-shadow: 2px 1px 6px black;
+    border-radius: 4px;
+  }
+
+  .title {
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 50px;
+  }
+
+  .author{
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 40px;
+  }
+
+  .src{
+    font-family: 'Ubuntu', sans-serif;
+    margin-right: 120px;
+  }
+
+  .content{
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 30px;
+  }
+
+  .name_container{
+      /* border: 2px solid black; */
+      display: flex;
+      justify-content: space-between;
+      /* justify-content: space-evenly; */
+      align-items: center;
+      
+  }
+
+  @media only screen and (max-width: 700px){
+      
+  .title{
+    margin-left: 70px;
+  }
+
+  .image_1{
+    margin-left: 50px;
+    width: 600px;
+    height: 350px;
+  }
+  .author{
+    margin-left: 110px;
+  }
+  
+  .source{
+    margin-right: 60px;
+  }
+  
+  .content{
+    font-size: 17px;
+    margin-left: 60px;
+  }
+  }
+
+  @media only screen and (max-width: 600px){
+      
+    .title{
+      margin-left: 40px;
+      font-size: 26px;
+    }
+  
+    .image_1{
+      margin-left: 50px;
+      width: 500px;
+      height: 300px;
+    }
+    
+    .content{
+      font-size: 17px;
+      margin-left: 30px;
+    }
+    }
+
+    @media only screen and (max-width: 550px){
+      
+        .title{
+          margin-left: 40px;
+          font-size: 26px;
+        }
+      
+        .image_1{
+          margin-left: 50px;
+          width: 400px;
+          height: 250px;
+        }
+
+        .author{
+            margin-left: 30px;
+        }
+
+        .src{
+            margin-right: 50px;
+        }
+        
+        .content{
+          font-size: 17px;
+          margin-left: 30px;
+        }
+        }
+
+        
+    @media only screen and (max-width: 470px){
+      
+        .title{
+          margin-left: 20px;
+          font-size: 22px;
+        }
+      
+        .image_1{
+          margin-left: 60px;
+          width: 300px;
+          height: 200px;
+        }
+
+        .author{
+            margin-left: 30px;
+        }
+
+        .src{
+            margin-right: 50px;
+        }
+        
+        .content{
+          font-size: 14px;
+          margin-left: 30px;
+        }
+        }
+
+          
+    @media only screen and (max-width: 400px){
+      
+        .title{
+          margin-left: 20px;
+          font-size: 22px;
+        }
+      
+        .image_1{
+          margin-left: 40px;
+          width: 300px;
+          height: 200px;
+        }
+
+        .author{
+            margin-left: 30px;
+        }
+
+        .src{
+            margin-right: 20px;
+        }
+        
+        .content{
+          font-size: 14px;
+          margin-left: 25px;
+        }
+        }
+
+        @media only screen and (max-width: 350px){
+      
+            .title{
+              margin-left: 20px;
+              font-size: 18px;
+            }
+          
+            .image_1{
+              margin-left: 40px;
+              width: 250px;
+              height: 150px;
+            }
+    
+            .author{
+                margin-left: 30px;
+                font-size: 13px;
+            }
+    
+            .src{
+                margin-right: 20px;
+                font-size: 13px;
+            }
+            
+            .content{
+              font-size: 14px;
+              margin-left: 20px;
+            }
+            }
+
+            
+        @media only screen and (max-width: 320px){
+      
+            .title{
+              margin-left: 20px;
+              font-size: 18px;
+            }
+          
+            .image_1{
+              margin-left: 30px;
+              width: 250px;
+              height: 150px;
+            }
+    
+            .author{
+                margin-left: 30px;
+                font-size: 13px;
+            }
+    
+            .src{
+                margin-right: 20px;
+                font-size: 13px;
+            }
+            
+            .content{
+              font-size: 14px;
+              margin-left: 20px;
+            }
+            }
