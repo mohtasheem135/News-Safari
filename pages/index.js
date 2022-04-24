@@ -58,7 +58,7 @@ const Home = () => {
               </div>
               {data[id].urlToImage === null ? <br /> : <img className={styles.image_1} src={data[id].urlToImage} alt="No image" />}
               {/* <img className={styles.image_1} src={data[id].urlToImage} /> */}
-              <p className={styles.description}>{data[id].description}<a className="read-more" target="_blank" href={data[id].url}>Read More</a></p>
+              <p className={styles.description}>{data[id].description}<a className="read-more" target="_blank" rel="noopener noreferrer" href={data[id].url}>Read More</a></p>
               {/* <p>{data[id].content}<a className="read-more" target="_blank" href={data[id].url}>Read More</a></p> */}
               <hr />
             </div>
