@@ -23,7 +23,7 @@ const NewsSrc = () => {
             <br /><br /><br /><br /><br />
             {Object.keys(data).map((id, index) => {
                 return (
-                    <div>
+                    <div key={index} >
                         {/* <FontAwesomeIcon icon="fa-solid fa-user" /> */}
                         
                         <h1 className={styles.title}>{data[id].title}</h1>
@@ -34,7 +34,8 @@ const NewsSrc = () => {
                         </div>
 
                         {/* <img className='image-1' src={data[id].urlToImage} /> */}
-                        {data[id].urlToImage === null ? <br /> : <img className={styles.image_1} src={data[id].urlToImage} alt="No image" />}
+                        {data[id].urlToImage === null ? <br /> : <img className={styles.image_1} src={data[id].urlToImage} />}
+                        {/* <p className={styles.content}>{data[id].description}<a className="read-more" target="_blank" href={data[id].url}>Read More</a></p> */}
                         <p className={styles.content}>{data[id].description}<a className="read-more"  href={data[id].url}>Read More</a></p>
                         {/* <p>{data[id].content}<a className="read-more" target="_blank" href={data[id].url}>Read More</a></p> */}
                         <hr />

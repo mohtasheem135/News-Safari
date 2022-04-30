@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar";
 import styles from "../styles/Home.module.css"
 import { useEffect, useState } from "react";
 import { useRouter } from 'next/router';
+import jsxKey from "eslint-plugin-react/lib/rules/jsx-key";
 
 const Home = () => {
 
@@ -14,6 +15,8 @@ const Home = () => {
         setData(json.articles)
         // console.log(json.articles)
       })
+
+      // console.log()
   }, [])
 
   const handelClick_fliter = (e) => {
@@ -28,6 +31,10 @@ const Home = () => {
     console.log(e.target.value)
     router.push(`/${e.target.value}`)
   }
+
+  Object.keys(data).map((id, index)=>{
+    console.log(data[id].title)
+  })
 
   return (
     <div>
@@ -49,16 +56,18 @@ const Home = () => {
       <div className={styles.container_1}>
         {Object.keys(data).map((id, index) => {
           return (
-            <div>
-              <h2 className={styles.title}>{data[id].title}</h2>
+            <div key={index} >
+              {/* {console.log("JJJ"+)} */}
+              <h2 className={styles.title}  >{data.title}</h2>
               <div className={styles.name_container}>
                 {/* var str = data[id].publishedAt.charAt(0,5); */}
-                <p className={styles.author}>{data[id].publishedAt.substring(0,10)} || {data[id].publishedAt.substring(11,16)} </p>
+                <p className={styles.author}>{data[id].publishedAt.substring(0, 10)} || {data[id].publishedAt.substring(11, 16)} </p>
                 <p className={styles.source}><b>{data[id].source.name}</b></p>
               </div>
               {data[id].urlToImage === null ? <br /> : <img className={styles.image_1} src={data[id].urlToImage} alt="No image" />}
               {/* <img className={styles.image_1} src={data[id].urlToImage} /> */}
-              <p className={styles.description}>{data[id].description}<a className="read-more" href={data[id].url}>Read More</a></p>
+              {/* <p className={styles.description}>{data[id].description}<a className="read-more" target="_blank" href={data[id].url}>Read More</a></p> */}
+              <p className={styles.description}>{data[id].description}<a className="read-more"  href={data[id].url}>Read More</a></p>
               {/* <p>{data[id].content}<a className="read-more" target="_blank" href={data[id].url}>Read More</a></p> */}
               <hr />
             </div>
