@@ -1,48 +1,11 @@
 import Navbar from "../components/Navbar";
 import styles from "../styles/Home.module.css"
-import { useEffect, useState } from "react";
 import { useRouter } from 'next/router';
 
 const Home = ({ news }) => {
 
- 
-  // return(
-  //   <div>
-  //     {Object.keys(news).map((id, index)=> {
-  //       console.log(news.articles)
-  //       // console.log("FFFF :- "+id)
-
-
-  //       return(
-  //         <div key={index}>
-  //           <h1>{news[id].title}</h1>
-  //           {/* <h1>{news[id].author}</h1> */}
-  //         </div>
-  //       )
-  //     })}
-      
-  //   </div>
-  // )
-
-  // const [news, setnews] = useState("");
-  // const router = useRouter()
-
-  // useEffect(() => {
-  //   fetch(`https://newsapi.org/v2/top-headlines?country=in&apiKey=f688b40cbae84bbb9364589714dc2da6`).then((res) => res.json())
-  //     .then((json) => {
-  //       setnews(json.articles)
-  //       // console.log(json.articles)
-  //     })
-
-  //     // console.log()
-  // }, [])
-
   const handelClick_fliter = (e) => {
-    // fetch(`https://newsapi.org/v2/top-headlines?q=${e.target.value}&language=en&apiKey=f688b40cbae84bbb9364589714dc2da6`).then((res) => res.json())
-    //   .then((json) => {
-    //     setnews(json.articles)
-    //     // console.log(json.articles)
-    //   })
+    
    
   }
 
@@ -81,9 +44,7 @@ const Home = ({ news }) => {
               </div>
               {news[id].urlToImage === null ? <br /> : <img className={styles.image_1} src={news[id].urlToImage} alt="No image" />}
               {/* <img className={styles.image_1} src={news[id].urlToImage} /> */}
-              <p className={styles.description}>{news[id].description}<a className="read-more" target="_blank" href={news[id].url}>Read More</a></p>
-              {/* <p className={styles.description}>{news[id].description}<a className="read-more"  href={news[id].url}>Read More</a></p> */}
-              {/* <p>{news[id].content}<a className="read-more" target="_blank" href={news[id].url}>Read More</a></p> */}
+              <p className={styles.description}>{news[id].description}<a className="read-more" target="_blank" rel="noreferrer" href={news[id].url}>Read More</a></p>
               <hr />
             </div>
           )
@@ -110,10 +71,9 @@ const Home = ({ news }) => {
   );
 }
 
-export async function getServerSideProps({ business }) {
+export async function getServerSideProps(context) {
 
-  // const res = await fetch(`https://newsapi.org/v2/top-headlines?q=${localStorage.getItem('ff')}&language=en&apiKey=f688b40cbae84bbb9364589714dc2da6`);
-  const res = await fetch(`https://newsapi.org/v2/top-headlines?country=in&apiKey=f688b40cbae84bbb9364589714dc2da6`);
+ const res = await fetch(`https://newsapi.org/v2/top-headlines?country=in&apiKey=f688b40cbae84bbb9364589714dc2da6`);
   const value = await res.json();
   return {
     props: {
