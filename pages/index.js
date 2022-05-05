@@ -4,6 +4,8 @@ import { useRouter } from 'next/router';
 
 const Home = ({ news }) => {
 
+  const router = useRouter()
+
   const handelClick_fliter = (e) => {
     
    
@@ -11,6 +13,8 @@ const Home = ({ news }) => {
 
   const handelClick_src = (e) => {
     console.log(e.target.value)
+
+    router.push('/hello')
     
   }
 
