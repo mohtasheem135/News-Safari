@@ -9,15 +9,21 @@ export default function Users({ initialData }) {
     const [data, setData] = useState(initialData);
 
     const fetchData = async (e) => {
+        // const req = await fetch(`https://newsapi.org/v2/top-headlines?q=${e.target.value}&language=en&apiKey=f688b40cbae84bbb9364589714dc2da6`);
+        // const newData = await req.json();
+
+        // return setData(newData.articles);
+    };
+
+    const handelClick_fliter = async (e) => {
+        e.preventDefault();
+        // fetchData(e);
+
         const req = await fetch(`https://newsapi.org/v2/top-headlines?q=${e.target.value}&language=en&apiKey=f688b40cbae84bbb9364589714dc2da6`);
         const newData = await req.json();
 
         return setData(newData.articles);
-    };
 
-    const handelClick_fliter = (e) => {
-        e.preventDefault();
-        fetchData(e);
     };
 
     const handelClick_src = (e) => {
