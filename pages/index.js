@@ -50,7 +50,7 @@ export default function Users({ initialData }) {
                     Object.keys(data).map((id, index) => {
                         // console.log("ggg : - " + id)
                         return (
-                            <div>
+                            
                                 <div key={index} >
                                     {/* {console.log("JJJ"+)} */}
                                     <h2 className={styles.title}>{data[id].title}</h2>
@@ -64,7 +64,7 @@ export default function Users({ initialData }) {
                                     <p className={styles.description}>{data[id].description}<a className="read-more" target="_blank" rel="noreferrer" href={data[id].url}>Read More</a></p>
                                     <hr />
                                 </div>
-                            </div>
+                            
                         );
                     })
                     :
