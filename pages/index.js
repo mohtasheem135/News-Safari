@@ -46,8 +46,7 @@ export default function Users({ initialData }) {
             </div>
 
             <div className={styles.container_1} >
-                {data != null ?
-                    Object.keys(data).map((id, index) => {
+                {Object.keys(data).map((id, index) => {
                         // console.log("ggg : - " + id)
                         return (
                             
@@ -66,9 +65,7 @@ export default function Users({ initialData }) {
                                 </div>
                             
                         );
-                    })
-                    :
-                    <h1>Loading...</h1>}
+                    })}
 
             </div>
 
